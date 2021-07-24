@@ -20,9 +20,9 @@ function hasValue(input, message) {
 	return showSuccess(input);
 }
 
-const form = document.querySelector("#payment");
+// let form = document.querySelector("payment");
 
-const NAME_REQUIRED = "Please enter your name";
+let NAME_REQUIRED = "Please enter your name";
 
 let form = document.getElementById("payment")
 
