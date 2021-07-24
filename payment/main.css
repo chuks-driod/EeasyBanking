@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+}
+
+.payment--form__div {
+    background-color: hsl(233, 13%, 86%);
+    padding: 30px 40px;
+}
+
+.payment--form {
+    display: grid;
+    grid-template-columns: 140px 30px 30px 70px 140px;
+    grid-template-rows: repeat(5,50px);
+    height: 500px;
+    grid-row-gap: 45px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.card {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+#card--numb {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    margin-top: 20px;
+    border: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.holders--name {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+#holders--name {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: 20px;
+    border: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.expiry {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span 3;
+}
+
+#expiry--date {
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-top: 20px;
+    width: 60px;
+}
+
+.month, .year {
+    width: 50px;
+    border: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+ 
+.cvv {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: span 3;
+    width: 100px;
+    cursor: pointer;
+}
+
+#cvv {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-top: 20px;
+    width: 150px;
+    border: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pin {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 4;
+    grid-row-end: span 4;
+}
+
+#pin {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-top: 20px;
+    border: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    width: 300px;
+    font-weight: bold;
+    font-size: 16px;
+    border: hidden;
+    border-radius: 16px;
+    background-image:linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%)) ;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 40rem) and (min-height: 40rem) {
+
+    
+    
+    .payment--form {
+        grid-template-columns: repeat(5, 150px);
+        padding: 25px 40px;
+    }
+
+    h3 {
+        padding: inherit;
+    }
+
+    #holders--name {
+        width: 77%;
+    }
+    
+    #pin {
+        /* margin-top: unset; */
+        /* margin-left: 30px; */
+        /* margin-bottom: 20px; */
+        width: 320px;
+    }
+
+    #card--numb {
+        /* margin-top: unset; */
+        /* margin-left: 95px; */
+        /* margin-bottom: 20px; */
+    }
+
+    .month, .year {
+        width: 70px;
+    }
+
+    #cvv {
+        width: 200px;
+    }
+
+}
